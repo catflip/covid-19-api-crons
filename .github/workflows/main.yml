@@ -1,21 +1,27 @@
 name: SCHEDULE
 
 on: 
- push:    
+ push: 
+  branches: 
+   - master   
 #  schedule:
 #     - cron : '0 0 * * *'
 
 jobs:
-  build:
+  store:
 
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Set up nodejs and install dependencies
-    - uses: actions/setup-node@v1
+      uses: actions/setup-node@v1
       with:
        node-version: '12'
-    - run: npm install -g yarn
-    - run: yarn
+    - name: install yarn  
+      run: npm install -g yarn
+    - name: install dependency  
+      run: yarn
+
     
