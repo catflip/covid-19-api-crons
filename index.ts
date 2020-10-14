@@ -14,7 +14,7 @@ import format  from 'date-fns/format';
       const write = promisify(fs.writeFile);
       const writeReadme=`# store covid daily api as json data
 
-- last cronjob : ${format(new Date(), "cccc, yyyy-LLLL-dd HH:mm:ss.SSSxxx")}
+- last cronjob : ${format(new Date(), "cccc, yyyy-LLLL-dd HH:mm:ss")}
 - status og cron : ${statusOg?"success":"error"}
 - status daily cron : ${statusDaily?"success":"error"}
       
