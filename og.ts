@@ -8,7 +8,7 @@ import {
   getDailyCases,
 } from "./util/api";
 import { writeTempFile, pathToFileURL } from "./util/file";
-export  async function og() {
+export async function og() {
   try{
     const [
       confirmed,
@@ -31,7 +31,7 @@ export  async function og() {
       lastUpdate,
       dailyCases,
       width: 1200,
-      height: 627,
+      height: 600,
     });
     const text = "textwoot";
     const filePath = await writeTempFile(text, html);
