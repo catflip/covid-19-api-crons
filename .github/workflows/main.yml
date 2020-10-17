@@ -35,4 +35,10 @@ jobs:
       with:
         github_token: ${{ secrets.PERSONAL_TOKEN }}
         branch: main
-
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: |
+          ./daily.json
+          ./og.png
+          ./README.md
