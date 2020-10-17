@@ -37,7 +37,12 @@ export async function og() {
     const filePath = await writeTempFile(text, html);
     const fileUrl = pathToFileURL(filePath);
     const browser = await playwright.chromium.launch();
-    const context = await browser.newContext();
+    const context = await browser.newContext({
+      viewport: {
+        width: 1200,
+        height: 600,
+      },
+    });
     const page = await context.newPage();
     await page.goto(fileUrl);
     await page.screenshot({ path: `og.png` });
