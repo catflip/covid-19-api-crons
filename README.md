@@ -1,7 +1,3 @@
-# store covid daily api as json data
+<center><h1>COVID 19 API CRON</h1></center>
 
-- last cronjob : Saturday, 17 October 2020 12:41:10
-- status og cron : success
-- status daily cron : success
-      
-      
+<center>this repo saved data from `/api/daily` and `/api/og` into `daily.json` and `og.png` also save the status of the cron into `STATUS.md`</center>
