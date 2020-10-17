@@ -19,6 +19,6 @@ import format  from 'date-fns/format';
 - status daily cron : ${statusDaily?"success":"error"}
       
       `;
-      await write("README.md", writeReadme);
+      await write("STATUS.md", writeReadme);
     
 })()
