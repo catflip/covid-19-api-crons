@@ -1,3 +1,3 @@
 ### COVID 19 API CRON
 
-<center>this repo saved data from `/api/daily` and `/api/og` into `daily.json` and `og.png` also save the status of the cron into `STATUS.md`</center>
+this repo saved data from `/api/daily` and `/api/og` into `daily.json` and `og.png` also save the status of the cron into `STATUS.md`
