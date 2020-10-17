@@ -129,7 +129,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     <style>
         ${getCss(width, height)}
     </style>
-    <script src="https://cdn.rawgit.com/fnando/sparkline/master/dist/sparkline.js"></script>
+    <script src="https://unpkg.com/@fnando/sparkline@0.3.10/dist/sparkline.js"></script>
   </head>
   <body>
   
