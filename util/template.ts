@@ -212,7 +212,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 
           <div class="data">
             <div class="heading font-inter">Deaths</div>
-            <div class="value font-inter" style="color:red;">${formatNumber(recovered)}</div>
+            <div class="value font-inter" style="color:red;">${formatNumber(deaths)}</div>
             <div class="heading font-inter" style="font-size: 1.25rem;background: red;color: white;line-height: 1.5;padding: 0 0.5rem;"><b style="margin: 0; ">${Math.trunc(
               (deaths / confirmed) * 100
             )}%</b> fatality rate</div>
